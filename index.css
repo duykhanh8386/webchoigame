@@ -217,10 +217,11 @@ footer {
 .custom-anh1:hover {
     transform: scale(1.1); /* Phóng to ảnh khi hover */
 }
-/* Phần Chơi Game */
 #game {
     background-color: rgba(255, 255, 255, 0.9); /* Nền sáng giống các phần khác */
     padding: 40px;
+    padding-right: 50px;
+    height:780px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 30px 0;
@@ -233,6 +234,7 @@ footer {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    height:auto;
 }
 
 /* Khung game */
@@ -250,7 +252,6 @@ footer {
     padding:10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-
 /* Cài đặt cho iframe */
 #gameIframe {
     border-radius: 10px; /* Bo góc của iframe */

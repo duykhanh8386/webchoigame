@@ -237,19 +237,27 @@ footer {
 
 /* Khung game */
 .game-board {
+    width: 125%; /* Mở rộng kích thước gốc để thu nhỏ */
+    height: auto; /* Mở rộng chiều cao */
+    transform: scale(0.8); /* Thu nhỏ toàn bộ giao diện xuống 80% */
+    transform-origin: top left; /* Căn chỉnh từ góc trên trái */
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff; /* Nền trắng cho khung game */
     border-radius: 10px;
+    padding:10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 10px;
 }
 
 /* Cài đặt cho iframe */
 #gameIframe {
     border-radius: 10px; /* Bo góc của iframe */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; /* Đảm bảo không có khoảng trống inline */
+    margin: 0; /* Xóa margin của iframe */
+    padding: 0; /* Xóa padding của iframe */
 }
 
 /* Phần tử chơi game hover hoặc chú ý */
@@ -272,6 +280,3 @@ footer {
     justify-content: center; /* Căn giữa iframe */
     align-items: center;     /* Căn giữa iframe */
 }
-
-/* Phần game */
-
